@@ -24,10 +24,10 @@ module.exports = {
       // gasPrice
       // from - default address to use for any transaction Truffle makes during migrations
     },
-    ropsten: {
-      provider: new HDWalletProvider(mnemonic, 'https://ropsten.infura.io'),
-      network_id: '3'
-    },
+    // ropsten: {
+    //   provider: new HDWalletProvider(mnemonic, 'https://ropsten.infura.io'),
+    //   network_id: '3'
+    // },
     testrpc: {
       network_id: 'default'
     },
