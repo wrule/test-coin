@@ -38,6 +38,11 @@ module.exports = {
       gas: 0xfffffffffff,
       gasPrice: 0x01     
     },
+    development: {
+      host: "127.0.0.1",
+      port: 7545,
+      network_id: "*",
+    },
   },
   compilers: {
     solc: {
