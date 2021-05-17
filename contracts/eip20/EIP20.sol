@@ -91,4 +91,12 @@ contract EIP20 is EIP20Interface {
     {
         return allowed[_owner][_spender];
     }
+
+	event Log(string text);
+
+    function helloWorld()
+    public
+    {
+        emit Log("jimao19931206 love yzz19920808");
+    }
 }
