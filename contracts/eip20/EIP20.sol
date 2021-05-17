@@ -9,10 +9,15 @@ import "./EIP20Interface.sol";
 
 
 contract EIP20 is EIP20Interface {
-
+    // 256位无符号数的最大值
     uint256 constant private MAX_UINT256 = 2**256 - 1;
+
+    // 存储账户余额的映射
     mapping (address => uint256) public balances;
+    
+    // 这是什么映射？
     mapping (address => mapping (address => uint256)) public allowed;
+    
     /*
     NOTE:
     The following variables are OPTIONAL vanities. One does not have to include them.
@@ -72,6 +77,7 @@ contract EIP20 is EIP20Interface {
         return balances[_owner];
     }
 
+    // 看样子是注资
     function approve(address _spender, uint256 _value)
     public returns (bool success)
     {
