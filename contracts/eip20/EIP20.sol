@@ -46,7 +46,7 @@ contract EIP20 is EIP20Interface {
         require(balances[msg.sender] >= _value);
         balances[msg.sender] -= _value;
         balances[_to] += _value;
-        emit Transfer(msg.sender, _to, _value); //solhint-disable-line indent, no-unused-vars
+        emit Transfer(msg.sender, _to, _value);
         return true;
     }
 
@@ -61,7 +61,7 @@ contract EIP20 is EIP20Interface {
         if (allowance < MAX_UINT256) {
             allowed[_from][msg.sender] -= _value;
         }
-        emit Transfer(_from, _to, _value); //solhint-disable-line indent, no-unused-vars
+        emit Transfer(_from, _to, _value);
         return true;
     }
 
@@ -76,7 +76,7 @@ contract EIP20 is EIP20Interface {
     public returns (bool success)
     {
         allowed[msg.sender][_spender] = _value;
-        emit Approval(msg.sender, _spender, _value); //solhint-disable-line indent, no-unused-vars
+        emit Approval(msg.sender, _spender, _value);
         return true;
     }
 
