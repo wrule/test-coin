@@ -28,21 +28,21 @@ module.exports = {
     //   provider: new HDWalletProvider(mnemonic, 'https://ropsten.infura.io'),
     //   network_id: '3'
     // },
-    testrpc: {
-      network_id: 'default'
-    },
-    coverage: {
-      host: "localhost",
-      network_id: "*",
-      port: 8555,        
-      gas: 0xfffffffffff,
-      gasPrice: 0x01     
-    },
-    development: {
-      host: "127.0.0.1",
-      port: 7545,
-      network_id: "*",
-    },
+    // testrpc: {
+    //   network_id: 'default'
+    // },
+    // coverage: {
+    //   host: "localhost",
+    //   network_id: "*",
+    //   port: 8555,        
+    //   gas: 0xfffffffffff,
+    //   gasPrice: 0x01     
+    // },
+    // development: {
+    //   host: "127.0.0.1",
+    //   port: 7545,
+    //   network_id: "*",
+    // },
   },
   compilers: {
     solc: {
