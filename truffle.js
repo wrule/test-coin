@@ -28,7 +28,7 @@ module.exports = {
       provider: new HDWalletProvider(mnemonic, 'https://ropsten.infura.io/v3/cd411dbf8b3f4dad8c5235895c797fca'),
       network_id: 3,
       // gas: 21000,
-      gasPrice: 5500000000,
+      gasPrice: 2,
     },
     // testrpc: {
     //   network_id: 'default'
